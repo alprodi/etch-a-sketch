@@ -13,7 +13,7 @@ for (let x = 0; x < rows; x++) {
         const grid = document.createElement('div');
         grid.classList.add('grid');
         grid.addEventListener('mouseover', () =>{
-            grid.style.background = ('black');
+            grid.classList.add('grid_black');
         });
         grid_row.appendChild(grid);
      }
