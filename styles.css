@@ -23,12 +23,16 @@ html {
     border-style: dashed;
     padding: 15px;
     margin: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 #grid_container{
     border-style: solid;
     padding: 15px;
     margin: 15px;
+    width: 50%;
+    height: width;
 }
 .grid, 
 .grid_black{

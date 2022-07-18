@@ -1,7 +1,7 @@
 let rows = 16;
 let columns = 16;
 
-const grid_container = document.querySelector("#grid_container");
+const grid_container = document.querySelector('#grid_container');
 
 //add 1 row of grid boxes as many times as columns
 //at end of row, repeat as many times as rows
@@ -18,7 +18,12 @@ for (let x = 0; x < rows; x++) {
         grid_row.appendChild(grid);
      }
 }
-    //for(y = 0; y < columns; y++){
 
-     //}
-//}
+//reset grid backgrounds
+const reset_button = document.querySelector("#reset_button");
+reset_button.onclick = function(){
+    const grid_reset = document.querySelectorAll('.grid_black');
+    grid_reset.forEach(function(to_remove){
+        to_remove.classList.remove('grid_black');
+    });
+}
