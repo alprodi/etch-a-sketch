@@ -2,6 +2,7 @@ let rows = 16;
 let columns = 16;
 
 
+
 const grid_container = document.querySelector("#grid_container");
 
 //add 1 row of grid boxes as many times as columns
@@ -15,7 +16,6 @@ for (let x = 0; x < rows; x++) {
         grid.classList.add('grid');
         grid_row.appendChild(grid);
      }
-
 }
     //for(y = 0; y < columns; y++){
 
