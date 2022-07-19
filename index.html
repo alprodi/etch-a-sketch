@@ -10,8 +10,16 @@
     
     <div class = container>
         <div class = input_area>
-            <div id = "rows_input">Rows: </div>
-            <div id = "columns_input">Columns: </div>
+            <div class = form_label>Rows</div>
+            <form>
+                <input type = "number" id = "rows_input" 
+                    name = "rows_input" value = 16 >
+            </form>
+            <div class = form_label>Columns</div>
+            <form>
+                <input type = "number" id = "columns_input" 
+                    name = columns_input value = 16 >
+            </form>
             <button id = "submit_button">Submit</button>
             <button id = "reset_button">Reset</button>
         </div>

@@ -50,6 +50,7 @@ html {
 .grid_black{
     background: black;
     }
+
 .grid_row{
 
     display: flex;
@@ -59,4 +60,16 @@ html {
     margin-left: 50px;
     margin-right: 50px;
     
+}
+
+.form_label{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    font-weight: bold;
+}
+
+button{
+    margin: 10px;
+    font-weight: bold;
 }
