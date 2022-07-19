@@ -47,6 +47,10 @@ function delete_grid(){
     grid_remove.forEach(function(del_grid){
     del_grid.remove();
     });
+    const grid_row_remove = document.querySelectorAll('.grid_row');
+    grid_row_remove.forEach(function(del_grid_row){
+    del_grid_row.remove();
+    });
 }
 function submit_grid(){
     reset_grid();
