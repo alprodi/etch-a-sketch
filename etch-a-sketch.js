@@ -28,14 +28,14 @@ const submit_button = document.querySelector('#submit_button');
 submit_button.onclick = function(){submit_grid()};
 
 //reset button to reset grid backgrounds
+const reset_button = document.querySelector('#reset_button');
+reset_button.onclick = function() {reset_grid()};
+
 function reset_grid(){
-    const reset_button = document.querySelector('#reset_button');
-    reset_button.onclick = function(){
-        const grid_reset = document.querySelectorAll('.grid_black');
-        grid_reset.forEach(function(to_remove){
-            to_remove.classList.remove('grid_black');
-        });
-    }
+    const grid_reset = document.querySelectorAll('.grid_black');
+    grid_reset.forEach(function(to_remove){
+        to_remove.classList.remove('grid_black');
+    });
 }
 
 //row and column input forms
